@@ -1,0 +1,11 @@
+$primary-red: red;
+$secondary-red: pink;
+
+body .blog-main-wrapper {
+    background-color: #fff;
+}
+
+#poesia {
+    background-image: url(Imagenes/0.jpg);
+    border: 2px, solid, $secondary-red;
+}
