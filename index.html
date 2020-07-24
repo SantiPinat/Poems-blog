@@ -6,9 +6,12 @@
     <meta name="description" content="Responsive Poetry Blog Template"> 
     <meta name="author" content="Pinat Santiago">
     <title>Blog Poesia</title>
-    <link rel="stylesheet" href="/css/bootstrap.css">
-    <link rel="stylesheet" href="/css/style.css">    
-    <link rel="stylesheet" href="/css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">    
+    <link rel="stylesheet" href="css/all.min.css">
+     <!--<link href="css/fontawesome.css" rel="stylesheet">
+    <link href="css/brands.css" rel="stylesheet">
+    <link href="css/solid.css" rel="stylesheet">-->
 </head>
 <body>
     <article class="blog-main-wrapper text-left position-relative"><!--ACA ES El CONTENEDOR PRINCIPAL-->
@@ -41,7 +44,10 @@
                           <div class="dropdown-divider"></div>
                           <a class="dropdown-item disabled" href="#">Publica</a>
                         </div>
-                      </li>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link scrollto" href="#contacto" tabindex="-1" aria-disabled="true">Contacto</a>
+                    </li>
                   </ul> <!--FINALIZA NAV BAR DE LINKS-->
                   <form class="form-inline my-2 my-lg-0">
                     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
@@ -136,35 +142,45 @@
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat exercitationem quo inventore facere sint molestias delectus accusamus odio quia neque aspernatur accusantium excepturi eum alias modi quisquam, veniam provident consequuntur?</p>
             </div>
         </div><!--DIV DE SECCION LIBROS-->
-        <div class="contactfooter" id="Contacto">
-            <div class="row bg-dark">
-              <div class="text-light col-xl-6 col-lg-6">
-                <h3>CONTACTO</h3>
-                <p>Telefono:</p>
-                <p>11-4098-7651</p>
-                <p>Email:</p>
-                <p><a href="mailto:santipinat@gmail.com">santipinat@gmail.com</a></p>
-                <p>Buenos Aires - Argentina</p>
-                <p>(C1414) C.A.B.A.</p>
-              </div>
-              <div class="col-xl-6 col-lg-6">
-                Consultas
-                nombre
-                Email
-                Telefono
-                Consultas
-                "No soy robot"
-                Newsketter
-              </div>
+        <div class="contactfooter bg-dark" id="contacto">
+                <div id="contact" class="container-fluid">
+                  <h2 class="text-center text-white">CONTACTO</h2>
+                  <div class="row">
+                    <div class="text-white col-sm-5">
+                      <p>Contactanos, te daremos una pronta respuesta.</p>
+                      <p>Buenos Aires, Argentina</p>
+                      <p>(C1414) C.A.B.A.</p>
+                      <p>+11-4098-7651</p>
+                      <p><a href="mailto:santipinat@gmail.com">santipinat@gmail.com</a></p>
+                    </div>
+                    <div class="col-sm-7 slideanim">
+                      <div class="row">
+                        <div class="col-sm-6 form-group">
+                          <input class="form-control" id="name" name="name" placeholder="Nombre" type="text" required>
+                        </div>
+                        <div class="col-sm-6 form-group">
+                          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                        </div>
+                      </div>
+                      <textarea class="form-control" id="comments" name="comments" placeholder="Comentario" rows="5"></textarea><br>
+                      <div class="row">
+                        <div class="col-sm-12 form-group">
+                          <button class="btn btn-default pull-right border-white text-white" type="submit">Enviar</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="container text-center"><a href="#home" title="To Top"><i class="text-white fas fa-angle-double-up fa-3x"></i></a>  </div>
+                </div>
             </div>
         </div><!--DIV DE SECCION CONTACTO-->
-        <div class="footersection" id="footer">
+        <div class="container-fluid footersection" id="footer">
           <div class="row bg-dark">
-            <div class="col-xl-6 col-lg-6 text-light"><small><h6>Copyright 2020 Santiago Elias Pinat</h6></small></div>
-              <div class="col-xl-6 col-lg-6 d-inline">
-                <span><i class="fab fa-instagram-square" id="ig"></i><a href="http://www.instagram.com/sueltosenpapeles" target="_blank" rel="noopener noreferrer">/sueltosenpapeles</a></span>
-                <span><i class="fab fa-facebook-square" style="color: #3B5998;"></i><a href="http://www.facebook.com/sueltoenpapeles" target="_blank" rel="noopener noreferrer">/sueltosenpapeles</a></span>
-                <span><i class="fab fa-twitter-square" style="color: #55ACEE;" aria-hidden="true"></i><a href="http://www.twitter.com/sueltosenpapeles" target="_blank" rel="noopener noreferrer">/sueltosenpapeles</a></span>
+            <div class="col-xl-6 col-lg-6 text-light"><small><p>Copyright 2020 Santiago Elias Pinat</p></small></div>
+              <div class="col-xl-6 col-lg-6" id="netfooter">
+                <span><i class="fab fa-instagram-square" id="ig"></i><a href="http://www.instagram.com/sueltosenpapeles" target="_blank" rel="noopener noreferrer"><h6 class="d-inline">/sueltosenpapeles</h6></a></span>
+                <span><i class="fab fa-facebook-square" style="color: #3B5998;"></i><a href="http://www.facebook.com/sueltoenpapeles" target="_blank" rel="noopener noreferrer"><h6 class="d-inline">/sueltosenpapeles</h6></a></span>
+                <span><i class="fab fa-twitter-square" style="color: #55ACEE;" aria-hidden="true"></i><a href="http://www.twitter.com/sueltosenpapeles" target="_blank" rel="noopener noreferrer"><h6 class="d-inline">/sueltosenpapeles</h6></a></span>
               </div>
           </div>
         </div><!--DIV DE SECCION CONTACTO-->
