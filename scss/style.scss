@@ -5,10 +5,7 @@ section .omgfondo {
     background-image: url(/Imagenes/fondojumbotron.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-}
-.fa-facebook-square {
-    color: rgb(59, 91, 152);
-  }
+]
 #ig {
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
     -webkit-background-clip: text;
@@ -16,6 +13,6 @@ section .omgfondo {
             background-clip: text;
     -webkit-text-fill-color: transparent;
     
-    font-size: 200px; /* change this to change the size*/
+    font-size: 15px; /* change this to change the size*/
     
 }
