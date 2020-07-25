@@ -16,8 +16,9 @@
 </head>
 <body>
   <article class="blog-main-wrapper text-left position-relative"><!--ACA ES El CONTENEDOR PRINCIPAL-->
-    <div class="container-fluid">
-        <nav class="main-nav navbar navbar-expand-lg fixed-top navbar-inverse navbar-dark bg-dark" role="navigation">
+    <header>
+      <div class="container-fluid">
+        <nav class="main-nav navbar navbar-expand-lg fixed-top navbar-inverse" role="navigation">
             <a class="navbar-brand" href="#home">SeP(Brand-Icon)</a> <!--LOGO / BRAND-->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -25,16 +26,16 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ml-auto mr-2">
                 <li class="nav-item">
-                  <a class="nav-link scrollto" href="#home" tabindex="-1" aria-disabled="true">SEP <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="#home" tabindex="-1" aria-disabled="true">SEP <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link scrollto" href="#poesia" tabindex="-1" aria-disabled="true">Poesia</a>
+                  <a class="nav-link" href="#poesia" tabindex="-1" aria-disabled="true">Poesia</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link scrollto" href="#escritores" tabindex="-1" aria-disabled="true">Escritores</a>
+                  <a class="nav-link" href="#escritores" tabindex="-1" aria-disabled="true">Escritores</a>
                 </li>
                 <li class="nav-item dropdown" >
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" tabindex="-1" aria-disabled="true" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle disabled" href="#" id="navbarDropdown" tabindex="-1" aria-disabled="true" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       Libros
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -45,7 +46,7 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link scrollto" href="#contacto" tabindex="-1" aria-disabled="true">Contacto</a>
+                  <a class="nav-link" href="#contacto" tabindex="-1" aria-disabled="true">Contacto</a>
                 </li>
               </ul> <!--FINALIZA NAV BAR DE LINKS-->
               <form class="form-inline my-2 my-lg-0">
@@ -55,7 +56,8 @@
             </div><!--COLLAPSE NAVBAR-->
         </nav><!-- NAVBAR-->
       </div><!--FINALIZA EL HEADER NAVBAR-->
-    <section>
+    </header>
+    <section class="carousel-section" id="carousel">
         <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
               <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -80,7 +82,7 @@
               <div class="carousel-item">
                 <img src="Imagenes/cortazar.jpg" class="img-fluid d-block h-60 w-100" alt="Julio Cortazar">
                 <div class="carousel-caption d-none d-md-block">
-                  <h5 class="font-weight-bolder shadow text-body">Julio Cortazar</h5>
+                  <h5 class="font-weight-bolder text-body">Julio Cortazar</h5>
                   <p class="text-left font-weight-bolder text-body">Definitivamentes uno de los mejores escritores de su siglo. Referente, combativo y maestro.</p>
                 </div>
               </div><!--3er SLIDE DE CARROUSEL-->
@@ -137,7 +139,7 @@
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat exercitationem quo inventore facere sint molestias delectus accusamus odio quia neque aspernatur accusantium excepturi eum alias modi quisquam, veniam provident consequuntur?</p>
         </div>
     </div><!--DIV DE SECCION LIBROS-->
-    <div class="contactfooter bg-dark" id="contacto">
+    <div class="contactfooter" id="contacto">
             <div id="contact" class="container-fluid">
               <h2 class="text-center text-white" id="contacto">CONTACTO</h2>
               <div class="row">
@@ -169,11 +171,11 @@
         </div>
     </div><!--DIV DE SECCION CONTACTO-->
     <div class="container-fluid footersection" id="footer">
-      <div class="row bg-dark">
+      <div class="row">
         <div class="srcrolltotop container text-center">
           <span class="fa-stack fa-1x">
             <i class="fas fa-square fa-stack-2x"></i>
-            <a href="#home" title="To Top" class="text-dark" id="srcrolltotop"><i class="fas fa-angle-double-up fa-stack-2x" ></i></a>
+            <a href="#carousel" title="To Top" class="text-dark" id="srcrolltotop"><i class="fas fa-angle-double-up fa-stack-2x" ></i></a>
           </span>
         </div>
         <div class="col-xl-6 col-lg-6 col-md-5 col-sm-4 text-light">
