@@ -1,4 +1,4 @@
-$(document).ready(function(){
+/*$(document).ready(function(){
     // Add smooth scrolling to all links in navbar + footer link
     $(".navbar a, a[href='#home']").on('click', function(event) {
       // Make sure this.hash has a value before overriding default behavior
@@ -31,4 +31,45 @@ $(document).ready(function(){
           }
       });
     });
-  })
+  });
+  window.sr = ScrollReveal();
+
+  sr.reveal('.navbar', {
+    duration: 2000,
+    origin: 'bottom'
+  });
+
+  sr.reveal('carousel', {
+    duration: 2000,
+    origin: 'top',
+    distance: '300px'
+  });
+
+  sr.reveal('.omgfondo', {
+    duration: 2000,
+    origin: 'right',
+    distance: '300px'
+  });
+
+  sr.reveal('.poesia-section', {
+    duration: 2000,
+    delay: 1000, 
+    origin: 'bottom'
+  });
+
+  sr.reveal('#contacto div',{
+    duration: 2000,
+    origin: 'left',
+    distance: '300px',
+
+  });
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });
+  */
