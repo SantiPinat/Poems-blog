@@ -5,66 +5,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Responsive Poetry Blog Template"> 
     <meta name="author" content="Pinat Santiago">
-    <title>Blog Poesia</title>
+    <title>Sueltos en Papeles - Poetry Blog</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">    
     <link rel="stylesheet" href="css/all.min.css">
-    <script src="https://unpkg.com/scrollreveal"></script>
-     <!--<link href="css/fontawesome.css" rel="stylesheet">
-    <link href="css/brands.css" rel="stylesheet">
-    <link href="css/solid.css" rel="stylesheet">-->
 </head>
+
 <body>
   <article class="blog-main-wrapper text-left position-relative"><!--ACA ES El CONTENEDOR PRINCIPAL-->
     <header>
-      <div class="container-fluid">
-        <nav class="main-nav navbar navbar-expand-lg fixed-top navbar-inverse" role="navigation">
-            <a class="navbar-brand" href="#home">SeP(Brand-Icon)</a> <!--LOGO / BRAND-->
+      <div class="container-fluid barnav">
+        
+        <nav class="main-nav navbar navbar-expand-lg fixed-top navbar-dark scrolling-navbar" role="navigation">
+            
+          <a class="navbar-brand" href="#">SeP(Brand-Icon)</a> <!--LOGO / BRAND-->
+            
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button><!--BOTON TOGGLER DEL COLLAPSE RESPONSIVE-->
+            
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ml-auto mr-2">
+              <ul class="navbar-nav ml-auto mr-2 smooth-scroll" >
                 <li class="nav-item">
-                  <a class="nav-link" href="#home" tabindex="-1" aria-disabled="true">SEP <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="#home" >SEP</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#poesia" tabindex="-1" aria-disabled="true">Poesia</a>
+                  <a class="nav-link" href="#poesia">Poesia</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#escritores" tabindex="-1" aria-disabled="true">Escritores</a>
+                  <a class="nav-link" href="#escritores">Escritores</a>
                 </li>
                 <li class="nav-item dropdown" >
-                    <a class="nav-link dropdown-toggle disabled" href="#" id="navbarDropdown" tabindex="-1" aria-disabled="true" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+                    <a class="nav-link dropdown-toggle disabled " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       Libros
                     </a>
+
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                       <a class="dropdown-item" href="#">Compra</a>
                       <a class="dropdown-item" href="#">Busca</a>
                       <div class="dropdown-divider"></div>
                       <a class="dropdown-item disabled" href="#">Publica</a>
                     </div>
+
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#contacto" tabindex="-1" aria-disabled="true">Contacto</a>
+                  <a class="nav-link" href="#contacto" >Contacto</a>
                 </li>
-              </ul> <!--FINALIZA NAV BAR DE LINKS-->
-              <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
-                <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Buscar</button>
-              </form> <!--FORMULARIO Y BOTON DE BUSQUEDA-->
+              </ul> <!--FINALIZA NAV BAR DE LINKS tabindex="-1" aria-disabled="true"-->
+              
+              <ul class="navbar-nav nav-flex-icons">
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.facebook.com/Suelto-En-Papeles-101740954968963/?ref=search&__tn__=%2Cd%2CP-R&eid=ARDMzKmO1nGROQyX78gHL3RLzOza-iU3zqjZveNfN0lphhAIylcnQJWjSEk4ZXzJUhRF26a1jvLUWw4z" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://www.twitter.com/sueltoenpapeles" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://www.instagram.com/sueltoenpapeles" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                </li>
+            </ul> <!--FORMULARIO Y BOTON DE BUSQUEDA-->
+            
             </div><!--COLLAPSE NAVBAR-->
-        </nav><!-- NAVBAR-->
+       
+          </nav><!-- NAVBAR-->
+    
       </div><!--FINALIZA EL HEADER NAVBAR-->
-    </header>
-    <section class="carousel-section" id="carousel">
-        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+    
+    <div class="row carousel-section" id="carouselm">
+        <div class="col container  mt-5">
+          <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
               <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
               <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
               <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
             </ol>
+
             <div class="carousel-inner">
+
               <div class="carousel-item active">
                 <img src="Imagenes/walsh.jpg" class="img-fluid d-block h-60 w-100" alt="Maria Elena Walsh">
                 <div class="carousel-caption d-none d-md-block">
@@ -72,6 +90,7 @@
                   <p class="text-left font-weight-bolder text-body">Una de las personalidades más importantes de la literatura y la historia argentina. Con preciosos escritos aún por seguir descubriendo.</p>
                 </div>
               </div> <!--1er SLIDE DE CARROUSEL-->
+
               <div class="carousel-item">
                 <img src="Imagenes/pizarnik.jpeg" class="img-fluid d-block h-60 w-100" alt="Alejandra Pizarnik">
                 <div class="carousel-caption d-none d-md-block">
@@ -79,6 +98,7 @@
                   <p class="text-left font-weight-bolder text-body">Una poetisa como pocas han habido en la literatura. Cuenta con excelentes y excepcionales frases incrustadas de tal manera que se acomodan en el alma del lector.</p>
                 </div>
               </div><!--2do SLIDE DE CARROUSEL-->
+
               <div class="carousel-item">
                 <img src="Imagenes/cortazar.jpg" class="img-fluid d-block h-60 w-100" alt="Julio Cortazar">
                 <div class="carousel-caption d-none d-md-block">
@@ -86,52 +106,77 @@
                   <p class="text-left font-weight-bolder text-body">Definitivamentes uno de los mejores escritores de su siglo. Referente, combativo y maestro.</p>
                 </div>
               </div><!--3er SLIDE DE CARROUSEL-->
+
             </div><!--INNER DE CARROUSEL-->
-        </div><!-- CARROUSEL-->
-    </section><!--CONTENEDOR DE CARROUSEL-->
-    <section class="home-section py-4"  id="home">
-        <div class="omgfondo" >
-          <div>
+
+          </div><!-- CARROUSEL-->
+        </div>
+        <div class="col  mt-5">
+          <div class="container omgfondo" >
             <h2>Sean todos bienvenidos!</h2>
-            <h1>Sueltos En Papeles</h1>
+            <h1>Suelto En Papeles</h1>
             <p>La mision de Sueltos en Papeles tiene un claro objetivo, es el de poder ser la semilla de una comunidad dedicada a poder disfrutar y compartir de la poesía. Que cada escritor tenga un espacio para publicar, ser leído y llegar a mas lectores. Por otra parte, brindarles a los lectores un lugar donde encontrar sus poemas favoritos, sus autores predilectos, y compartir opiniones acerca de los textos.</p>
             <p>A partir de aquí comenzarán el recorrido por esta web que intentará trasladarlos, a traves de su contenido, por un camino lleno de sorpresas, de nuevos destinos por recorrer y, sobre todo, poder transitar las emociones que nos generan los escritos que aquí encontraremos. Les propongo la aventura de construir juntos una nueva comunidad literaria en torno a la poesía.</p>
             <h3>¡Vamos por ello!</h3>
-          </div>
+        </div>
+        </div>
+      </div><!--CONTENEDOR DE CARROUSEL-->
+    </header>
+
+    <section class="home-section py-4"  id="home">
+      <div class="container omgfondo" >
+          <h2>Sean todos bienvenidos!</h2>
+          <h1>Suelto En Papeles</h1>
+          <p>La mision de Sueltos en Papeles tiene un claro objetivo, es el de poder ser la semilla de una comunidad dedicada a poder disfrutar y compartir de la poesía. Que cada escritor tenga un espacio para publicar, ser leído y llegar a mas lectores. Por otra parte, brindarles a los lectores un lugar donde encontrar sus poemas favoritos, sus autores predilectos, y compartir opiniones acerca de los textos.</p>
+          <p>A partir de aquí comenzarán el recorrido por esta web que intentará trasladarlos, a traves de su contenido, por un camino lleno de sorpresas, de nuevos destinos por recorrer y, sobre todo, poder transitar las emociones que nos generan los escritos que aquí encontraremos. Les propongo la aventura de construir juntos una nueva comunidad literaria en torno a la poesía.</p>
+          <h3>¡Vamos por ello!</h3>
       </div>
     </section> <!--section DEL HOME-->
-    <div class="media border shadow-lg m-4 p-4">
-      <div class="media-body">
-        <h4>Santiago Elias Pinat <small><br><i>Un poco sobre mí</i></small></h4>
-        <p>Escritor, Psicólogo y Desarrollador. </p>
-      </div>
-      <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="es_ES" data-type="vertical" data-theme="dark" data-vanity="santiagopinat"><a class="LI-simple-link" href='https://ar.linkedin.com/in/santiagopinat?trk=profile-badge' target="_blank">Santiago Elias Pinat</a></div>
-      <!--<img src="Imagenes/santi.jpeg" alt="Santiago Elias Pinat" class="my-3 rounded-circle" style="width:100px;">-->
-    </div><!--TARJETA PERSONAL DEL HOME-->
-    <section class="seccion-poesia">
+
+    <section class="seccion-poesia my-5">
       <div class="poesia-section" id="poesia">
         <div class="container">
-          <h1>POESIA</h1>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat exercitationem quo inventore facere sint molestias delectus accusamus odio quia neque aspernatur accusantium excepturi eum alias modi quisquam, veniam provident consequuntur?</p>
+          <h2>POESIA</h2>
+          <ul class="list-unstyled">
+            <li>
+              <div class="container">
+                <p class="h4">(RE)Comienzo</p>
+                <pre class="text-dark">                   Tan simple parecía ser, a simple vista, que nadie daba por aludida su presencia, 
+                  tan, pero tan simple que su esencia era el auténtico vacío. 
+                  Sin embargo él, detallista, fue asombrado por esa simpleza, era sinónimo de un trabajo muy sencillo… 
+                  fino, pero sencillo. A él le encantaba aprovechar esas ocasiones en las que tenía todo tan servido, 
+                  tan al alcance de la palma de su mano que parecía la lluvia, que solamente caía y acariciaba su cuerpo. 
+                  Esas situaciones para él eran como un imán. Y ella que simplemente soñaba, esperaba, 
+                  creía que algún día el carbón sería diamante y así su vida pudiera volver 
+                  a esas épocas de brillo en las que solamente importaba un rayo de sol, 
+                  la centella de un trueno ó la música del viento y un poco de imaginación para ser simplemente feliz. 
+                  Los rincones deshabitados que ellos, con el tiempo, solían transitar eran los cofres en donde guardaban sus fantasías, 
+                  la conjugación del sexo, la lujuria y la liberación eran el óleo dentro del cuadro de las diferencias de cada uno de ellos, 
+                  tan diferentes como agua y aceite. 
+                  Pero no tan distintos y casi llegando a la perfección eran los momentos en los que estallaban uno dentro del otro
+                </pre>
+              </div>
+            </li>
+          </ul>
         </div>
       </div><!--DIV DE SECCION POESIA-->
     </section><!--SECCION DE POESIA-->
-    <section class="seccionescritores">
-        <div class="escritores-section" id="escritores">
-            <div class="container">
-                <h1>ESCRITORES</h1>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat exercitationem quo inventore facere sint molestias delectus accusamus odio quia neque aspernatur accusantium excepturi eum alias modi quisquam, veniam provident consequuntur?</p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat exercitationem quo inventore facere sint molestias delectus accusamus odio quia neque aspernatur accusantium excepturi eum alias modi quisquam, veniam provident consequuntur?</p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat exercitationem quo inventore facere sint molestias delectus accusamus odio quia neque aspernatur accusantium excepturi eum alias modi quisquam, veniam provident consequuntur?</p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat exercitationem quo inventore facere sint molestias delectus accusamus odio quia neque aspernatur accusantium excepturi eum alias modi quisquam, veniam provident consequuntur?</p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat exercitationem quo inventore facere sint molestias delectus accusamus odio quia neque aspernatur accusantium excepturi eum alias modi quisquam, veniam provident consequuntur?</p>
-            </div>
-        </div><!--DIV DE SECCION ESCRITORES-->
-    <!--</section> SECCION DE ESCRITORES-->
-             
-    <div class="Libros-section" id="libros">
+
+    <section class="seccionescritores my-5">
+      <div class="escritores-section" id="escritores">
+        <div class="media border shadow-lg m-4 p-4">
+          <div class="media-body">
+            <img src="Imagenes/santi.jpeg" alt="Santiago Elias Pinat" class="my-3 rounded-circle" style="width:100px;">
+            <h4>Santiago Elias Pinat <small><br><i>Un poco sobre mí</i></small></h4>
+             <p>Escritor, Psicólogo y Desarrollador. </p>
+          </div>  
+        </div><!--TARJETA PERSONAL DEL HOME-->  
+      </div><!--DIV DE SECCION ESCRITORES-->
+    </section><!--</section> SECCION DE ESCRITORES-->
+
+    <div class="libros-section my-5" id="libros">
         <div class="container">
-            <h1>Libros</h1>
+            <h2>Libros</h2>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat exercitationem quo inventore facere sint molestias delectus accusamus odio quia neque aspernatur accusantium excepturi eum alias modi quisquam, veniam provident consequuntur?</p>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat exercitationem quo inventore facere sint molestias delectus accusamus odio quia neque aspernatur accusantium excepturi eum alias modi quisquam, veniam provident consequuntur?</p>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat exercitationem quo inventore facere sint molestias delectus accusamus odio quia neque aspernatur accusantium excepturi eum alias modi quisquam, veniam provident consequuntur?</p>
@@ -139,60 +184,74 @@
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat exercitationem quo inventore facere sint molestias delectus accusamus odio quia neque aspernatur accusantium excepturi eum alias modi quisquam, veniam provident consequuntur?</p>
         </div>
     </div><!--DIV DE SECCION LIBROS-->
-    <div class="contactfooter" id="contacto">
-            <div id="contact" class="container-fluid">
-              <h2 class="text-center text-white" id="contacto">CONTACTO</h2>
+
+    <div class="contactfooter my-5" id="contacto">
+
+        <div id="contact" class="container-fluid">
+          <h2>CONTACTO</h2>
+
+          <div class="row">
+
+            <div class="lineacontacto col-sm-5">
+              <ul class="list-unstyled">
+                <li class="text-uppercase">Contactanos, te daremos una pronta respuesta.</li>
+                <li class="my-1">Buenos Aires, Argentina</li>
+                <li class="my-1">(C1414) C.A.B.A.</li>
+                <li class="my-1">+54 11-4098-7651</li>
+                <li class="my-1"><a href="mailto:santipinat@gmail.com">santipinat@gmail.com</a></li>
+              </ul>
+            </div>
+
+            <div class="formulario col-sm-7">
               <div class="row">
-                <div class="lineacontacto text-white col-sm-5">
-                  <p>Contactanos, te daremos una pronta respuesta.</p>
-                  <p>Buenos Aires, Argentina</p>
-                  <p>(C1414) C.A.B.A.</p>
-                  <p>+11-4098-7651</p>
-                  <p><a href="mailto:santipinat@gmail.com">santipinat@gmail.com</a></p>
+                <div class="col-sm-6 form-group">
+                  <input class="form-control" id="name" name="name" placeholder="Nombre" type="text" required>
                 </div>
-                <div class="formulario col-sm-7">
-                  <div class="row">
-                    <div class="col-sm-6 form-group">
-                      <input class="form-control" id="name" name="name" placeholder="Nombre" type="text" required>
-                    </div>
-                    <div class="col-sm  -6 form-group">
-                      <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
-                    </div>
-                  </div>
-                  <textarea class="form-control" id="comments" name="comments" placeholder="Comentario" rows="5"></textarea><br>
-                  <div class="row">
-                    <div class="col-sm-12 form-group">
-                      <button class="btn btn-default pull-right border-white text-white" type="submit">Enviar</button>
-                    </div>
-                  </div>
+                <div class="col-sm-6 form-group">
+                  <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                </div>
+              </div>
+              <textarea class="form-control" id="comments" name="comments" placeholder="Comentario" rows="5"></textarea><br>
+              
+              <div class="row">
+                <div class="col-sm-12 form-group">
+                  <button class="btn btn-default pull-right border-white text-white" type="submit">Enviar</button>
                 </div>
               </div>
             </div>
+
+          </div>
+
         </div>
+
+      </div>
     </div><!--DIV DE SECCION CONTACTO-->
     <div class="container-fluid footersection" id="footer">
       <div class="row">
+        
         <div class="srcrolltotop container text-center">
           <span class="fa-stack fa-1x">
             <i class="fas fa-square fa-stack-2x"></i>
-            <a href="#carousel" title="To Top" class="text-dark" id="srcrolltotop"><i class="fas fa-angle-double-up fa-stack-2x" ></i></a>
+            <a href="#carouselm" title="To Top" class="text-dark" id="srcrolltotop"><i class="fas fa-angle-double-up fa-stack-2x" ></i></a>
           </span>
         </div>
+        
         <div class="col-xl-6 col-lg-6 col-md-5 col-sm-4 text-light">
           <small><p>Copyright 2020 Santiago Elias Pinat</p></small>
         </div>
+        
         <div class="col-xl-6 col-lg-6 col-md-7 col-sm-8 col-xs-3" id="netfooter" style="font-size: 18px;">
           <span><i class="fab fa-instagram-square fa-fw" id="ig"></i><a href="http://www.instagram.com/sueltoenpapeles" target="_blank" rel="noopener noreferrer">/sueltosenpapeles</a></span>
           <span><i class="fab fa-facebook-square fa-fw" style="color: #3B5998;"></i><a href="https://www.facebook.com/Suelto-En-Papeles-101740954968963/?ref=search&__tn__=%2Cd%2CP-R&eid=ARDMzKmO1nGROQyX78gHL3RLzOza-iU3zqjZveNfN0lphhAIylcnQJWjSEk4ZXzJUhRF26a1jvLUWw4z" target="_blank" rel="noopener noreferrer">/sueltosenpapeles</a></span>
           <span><i class="fab fa-twitter-square fa-fw" style="color: #55ACEE;" aria-hidden="true"></i><a href="http://www.twitter.com/sueltoenpapeles" target="_blank" rel="noopener noreferrer">/sueltosenpapeles</a></span>
         </div>
       </div>
-    </div><!--DIV DE SECCION CONTACTO-->
+    </div><!--DIV DE SECCION FOOTER-->
   </article> <!--CONTENEDOR PRINCIPAL DE LA PAG-->
+  
   <script src="js/jquery.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/main.js"></script>
-  <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
 </body>
 </html>
