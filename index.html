@@ -10,62 +10,59 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/all.min.css">
 </head>
-
 <body>
-
 <!--HEADER navbar-->
-<div class="container mr-auto">
-  <nav class="navbar navbar-expand-md navbar-light fixed-top" role="navigation">
-    <a href="#" class="navbar-brand"><img src="Imagenes/0.jpg" alt="brand-image" style="width: 50px;"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive " aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-end" id="navbarResponsive">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="#">SEP</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Sobre mi</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Bienvenidos</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Mis poemas</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contacto</a>
-        </li>
-        <li class="nav-item ">
-          <a class="nav-link" href="https://www.facebook.com/Suelto-En-Papeles-101740954968963/?ref=search&__tn__=%2Cd%2CP-R&eid=ARDMzKmO1nGROQyX78gHL3RLzOza-iU3zqjZveNfN0lphhAIylcnQJWjSEk4ZXzJUhRF26a1jvLUWw4z" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="http://www.twitter.com/sueltoenpapeles" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="http://www.instagram.com/sueltoenpapeles" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
-        </li> <!--ICONS SSMM-->
-      </ul>
-    </div>
-  </nav>
-</div> 
+<header>
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-md navbar-light" role="navigation">
+      <a href="#" class="navbar-brand"><img src="Imagenes/0.jpg" alt="brand-image" style="width: 50px;"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive " aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarResponsive">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#jumbotron">SEP</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#welcome">Bienvenidos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#conoceme">Sobre mi</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Mis poemas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contacto</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="https://www.facebook.com/Suelto-En-Papeles-101740954968963/?ref=search&__tn__=%2Cd%2CP-R&eid=ARDMzKmO1nGROQyX78gHL3RLzOza-iU3zqjZveNfN0lphhAIylcnQJWjSEk4ZXzJUhRF26a1jvLUWw4z" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="http://www.twitter.com/sueltoenpapeles" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="http://www.instagram.com/sueltoenpapeles" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+          </li> <!--ICONS SSMM-->
+        </ul>
+      </div>
+    </nav>
+  </div> 
+</header>
+
 <!--SLIDER-->
+<section>
   <div class="container-fluid">
     <div id="slides" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#slides" data-slide-to="0" class="active"></li>
-        <li data-target="#slides" data-slide-to="1"></li>
-        <li data-target="#slides" data-slide-to="2"></li>
-      </ol>
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img src="Imagenes/fondo1.jpg" class="d-block w-100" alt="fondo1">
           <div class="carousel-caption">
             <h1 class="display-2">Suelto En Papeles</h1>
             <h3>Mi blog de poesía.</h3>
-            <button type="button" class="btn btn-outline-secondary btn-lg">Poemas</button>
-            <button type="button" class="btn btn-primary btn-lg">Conoceme</button>
+            <button type="button" class="btn btn-outline-secondary btn-lg disabled">Poemas</button>
+            <a href="#conoceme"><button type="button" class="btn btn-primary btn-lg">Conoceme</button></a>
           </div>
         </div>
         <div class="carousel-item">
@@ -77,13 +74,19 @@
         <div class="carousel-item ">
           <img src="Imagenes/fondo3.jpg" class="d-block w-100" alt="fondo3">
           <div class="carousel-caption ">
-            <h2 class="display-1 ">¡Bienvenidos!</h2>
+            <h3 class="display-1">¡Bienvenidos!</h3>
           </div>
         </div>
+        <ol class="carousel-indicators">
+          <li data-target="#slides" data-slide-to="0" class="active"></li>
+          <li data-target="#slides" data-slide-to="1"></li>
+          <li data-target="#slides" data-slide-to="2"></li>
+        </ol>
       </div>
   </div>
+</section>
 <!--JUMBOTRON-->
-<div class="container-fluid">
+<div class="container-fluid" id="jumbotron">
   <div class="row jumbotron">
     <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
       <p class="lead">
@@ -91,12 +94,12 @@
       </p>
     </div>
     <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
-      <a href="#" target="" rel="noopener noreferrer"><button type="button" class="btn btn-outline-secondary bt-lg">Contacto</button></a>
+      <a href="#contact" target="" rel="noopener noreferrer"><button type="button" class="btn btn-outline-secondary bt-lg">Contacto</button></a>
     </div>
   </div>
 </div>
 <!--WELCOME SECTION-->
-<div class="container-fluid padding">
+<div class="container-fluid padding" id="welcome">
   <div class="row welcome text-center">
     <div class="col-12">
       <h1 class="display-2">Bienvenidos a nuestra comunidad</h1>
@@ -111,13 +114,13 @@
 <!--BACKGROUND FIXED-->
 <figure>
   <div class="fixed-wrap">
-    <div class="fixed">
-
+    <div class="fixed" style="background-image: url('Imagenes/fondofixed.jpg')">
     </div>
   </div>
+
 </figure>
 <!--THREE COLUMN SECTION-->
-<div class="container-fluid padding">
+<div class="inspiraciones container-fluid padding">
   <h3 class="inspirationtitle display-4 text-center">Quienes me inspiran</h3>
   <div class="row text-center padding">
     <div class="col-xs-12 col-sm-6 col-md-4 media text-center">
@@ -137,17 +140,17 @@
     <div class="col-xs-12 col-md-4 media">
       <div class="media-body">
         <img src="Imagenes/walsh.jpg" alt="Santiago Elias Pinat" class="rounded-circle" style="width: 150px;">
-        <h4>Santiago Elias Pinat <small><br><i>Escritora</i></small></h4>
+        <h4>Maria Elena Walsh<small><br><i>Escritora</i></small></h4>
          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis excepturi delectus rerum alias quibusdam, hic dolorum, eius, fugit dignissimos asperiores ut numquam corrupti dolorem molestiae porro? Totam accusamus eligendi nemo?. </p>
       </div>  
     </div><!--TARJETA PERSONAL DEL HOME-->  
   </div>
-  <hr class="my-4">
 </div>
+<hr class="my-4">
 
 <!--CONOCEME-->
-<div class="container-fluid padding">
-  <div class="row conoceme text-center">
+<div class="container-fluid padding" id="conoceme">
+  <div class="row text-center">
     <div class="col-12">
       <h2 class="display-4">Un poco sobre mí</h2>
     </div>
@@ -155,7 +158,7 @@
 </div>
 <hr>
 <!--CARD-->
-<div class="container-fluid padding">
+<div class="container-fluid padding sobremi">
   <div class="row padding">
     <div class="text-center">
         <div class="card-media d-inline-block">
@@ -165,7 +168,7 @@
             <p class="card-text">
               Im a writer, psychologist and trainee web developer. 
             </p>
-            <a href="#" class="btn btn-outline-secondary">See profile</a>
+            <a href="https://www.linkedin.com/in/santiagopinat/" target="_blank" class="btn btn-outline-secondary">See profile</a>
           </div>
         </div>
     </div>
@@ -209,10 +212,10 @@
     <div class="socket container-fluid">
       <hr class="light100">
       <div class="row">
-        <div class="col-lg-6 copyright">
-          <h4>&copy; Santiago Elias Pinat</h4>
+        <div class="col-6 copyright">
+          <h4>&copy; Santiago E Pinat</h4>
         </div>
-        <div class="col-lg-6 social text-right">
+        <div class="col-6 social">
           <a href="https://www.facebook.com/Suelto-En-Papeles-101740954968963/?ref=search&__tn__=%2Cd%2CP-R&eid=ARDMzKmO1nGROQyX78gHL3RLzOza-iU3zqjZveNfN0lphhAIylcnQJWjSEk4ZXzJUhRF26a1jvLUWw4z" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
           <a href="http://www.twitter.com/sueltoenpapeles" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
           <a href="http://www.instagram.com/sueltoenpapeles" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
