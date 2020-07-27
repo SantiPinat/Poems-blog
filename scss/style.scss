@@ -11,34 +11,126 @@
     --quarter-color: #2856D7;
     --quinary-color: #162140;
 }
+.navbar {
+    padding: .6em;
+}
+.navbar-nav li {
+    padding-right: 20px;
+}
+.nav-link {
+    font-size: 1.1em!important;
+}
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.carousel-caption h1 {
+    font-size: 500%;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 5px #000;
+    color: #162140;
+}
+.carousel-caption h3 {
+    font-size: 200%;
+    font-weight: 500;
+    text-shadow: 1px 1px 3px #000;
+    padding-bottom: 1rem;
+}
+.btn-primary {
+    background-color: #162140;
+    border: 1px solid #162140;
+}
+.btn-primary:hover {
+    background-color:var(--quarter-color);
+    border: 1px solid var(--quarter-color);
+}
+.jumbotron {
+    padding: 1rem;
+    border-radius: 0;
+}
+.padding {
+    padding-bottom: 2rem;
+}
+.welcome {
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 2rem;
+}
+.welcome hr {
+    border-top: 2px solid #b4b4b4;
+    width: 95%;
+    margin-top: .3rem;
+    margin-bottom: 1rem;
+}
+.inspirationtitle {
+    padding-bottom: 3rem;
+}
+.media-body {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.social a {
+    font-size: 1.5em;
+    padding: 1em;
+}
+.fa-facebook {
+    color: #3b5998;
+}
+.fa-twitter {
+    color: #00eced;
+}
+.fa-instagram {
+    color: #517fae;
+}
+.fa-facebook:hover,
+.fa-twitter:hover, 
+.fa-instagram:hover {
+    color: #000;
+}
+.footer {
+    background-color:lightgrey;
+    padding-top: 2em;
+}
+hr.light {
+    border-top: 2px solid #b4b4b4;
+    width: 75%;
+    margin-top: .8rem;
+    margin-bottom: 1rem;
+}
+hr.light100 {
+    border-top: 2px solid #b4b4b4;
+    width: 100%;
+    margin-top: .8rem;
+    margin-bottom: 1rem;
+}
+@media (max-width: 992px){
 
-#ig {
-    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-    -webkit-background-clip: text;
-            /* Also define standard property for compatibility */
-            background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 18px; /* change this to change the size*/
 }
 
-article {
-    background-color: var(--primary-color);
-    header {
-        div.barnav {
-            background-color: var(--primary-color);
-            nav.main-nav{
-                color: var(--quinary-color);
-                div.collapse {
-                    ul {
-                        border: 3px, solid, red;
-                        color: var(--quinary-color);
-                    }
+@media (max-width: 768px){
+    .carousel-caption {
+        top: 45%;
+    }
+    .carousel-caption h1 {
+        font-size: 350%;
 
-                }
-            }
-        }
     }
-    section.home-section {
-        background-color: var(--tertiary-color);
+    .carousel-caption h3 {
+        font-size: 140%;
+        font-weight: 400;
+        padding-bottom: .1rem;
     }
+    .carousel-caption .btn {
+        font-size: 95%;
+        padding: 8px 14px;
+    }
+
+}
+@media(max-width: 576px){
+
 }
